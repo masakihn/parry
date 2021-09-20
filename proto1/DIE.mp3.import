@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/DIE.mp3-49bfa6feaf36ea37fbf6dac72b59570c.mp3str"
+
+[deps]
+
+source_file="res://DIE.mp3"
+dest_files=[ "res://.import/DIE.mp3-49bfa6feaf36ea37fbf6dac72b59570c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

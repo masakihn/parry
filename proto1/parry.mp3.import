@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/parry.mp3-b80aa3388078339a5e7e5ced29d517f8.mp3str"
+
+[deps]
+
+source_file="res://parry.mp3"
+dest_files=[ "res://.import/parry.mp3-b80aa3388078339a5e7e5ced29d517f8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

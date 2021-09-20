@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://samurai.gltf" type="PackedScene" id=1]
+[ext_resource path="res://samurai.gd" type="Script" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "block"
+length = 0.833333
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature001/Skeleton:Bone.006")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, -7.45058e-09, 0, 1, 1, 1, 1, 0.833333, 1, 0, 0, 0, 0, -7.45058e-09, 0, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature001/Skeleton:Bone.003")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 5.7742e-08, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, -0.0249894, -2.0001e-08, -0.00618043, 0.999669, 1, 1, 1, 0.133333, 1, 0, 0, 0, -0.083128, -5.60269e-08, -0.0205593, 0.996327, 1, 1, 1, 0.266667, 1, 0, 0, 0, -0.240344, -1.60048e-07, -0.0594424, 0.968866, 1, 1, 1, 0.333333, 1, 0, 0, 0, -0.304387, -1.96157e-07, -0.0752816, 0.949569, 1, 1, 1, 0.4, 1, 0, 0, 0, -0.334179, -2.20213e-07, -0.0826499, 0.938879, 1, 1, 1, 0.466667, 1, 0, 0, 0, -0.323965, -2.16364e-07, -0.0801238, 0.94267, 1, 1, 1, 0.533333, 1, 0, 0, 0, -0.275017, -1.89366e-07, -0.0680177, 0.95903, 1, 1, 1, 0.666667, 1, 0, 0, 0, -0.120614, -6.82828e-08, -0.0298304, 0.992251, 1, 1, 1, 0.733333, 1, 0, 0, 0, -0.0507023, -2.48595e-08, -0.0125399, 0.998635, 1, 1, 1, 0.8, 1, 0, 0, 0, -0.00757815, -1.22545e-08, -0.00187426, 0.99997, 1, 1, 1, 0.833333, 1, 0, 0, 0, 7.45058e-09, 1.94289e-16, 2.6077e-08, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature001/Skeleton:Bone.001")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, -1.86264e-09, 1.49012e-08, -1.86265e-09, 1, 1, 1, 1, 0.833333, 1, 0, 0, 0, -1.86264e-09, 1.49012e-08, -1.86265e-09, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("Armature001/Skeleton:Bone")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = true
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0.833333, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+
+[node name="samurai" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Bone001" parent="Armature/Bone" index="0"]
+transform = Transform( 1, 2.22044e-16, -2.22508e-16, -2.22508e-16, 0.999998, -0.00208768, 2.22044e-16, 0.00208768, 0.999998, 0, 1, 0 )
+
+[node name="AnimationPlayer" parent="." index="2"]
+anims/block = SubResource( 1 )
